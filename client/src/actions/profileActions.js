@@ -49,6 +49,11 @@ export const createProfile = (profileData, history) => dispatch => {
         );
 };
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d41a4659d45e24292ac0d4c8daf9ec4bae2684b0
 //Add Experience
 export const addExperience = (expData, history) => dispatch => {
     axios

@@ -6,7 +6,11 @@ import TextFieldGroup from '../common/TextFieldGroup';
 import TextAreaFieldGroup from '../common/TextAreaFieldGroup';
 import InputGroup from '../common/InputGroup';
 import SelectListGroup from '../common/SelectListGroup';
+<<<<<<< HEAD
 import { createProfile } from '../../actions/profileActions';
+=======
+import { createProfile, getCurrentProfile } from '../../actions/profileActions';
+>>>>>>> d41a4659d45e24292ac0d4c8daf9ec4bae2684b0
 
 
 class CreateProfile extends Component {
@@ -20,7 +24,10 @@ class CreateProfile extends Component {
          website: '',
          location: '',
          status: '',
+<<<<<<< HEAD
          skills: '',
+=======
+>>>>>>> d41a4659d45e24292ac0d4c8daf9ec4bae2684b0
          githubusername:'',
          bio: '',
          twitter:'',
@@ -34,7 +41,15 @@ class CreateProfile extends Component {
         this.onChange = this.onChange.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
     }
+<<<<<<< HEAD
   
+=======
+    
+    componentDidMount(){
+        this.props.getCurrentProfile();
+    }
+    
+>>>>>>> d41a4659d45e24292ac0d4c8daf9ec4bae2684b0
     componentWillReceiveProps(nextProps) {
         if(nextProps.errors) {
             this.setState({errors: nextProps.errors});
@@ -45,7 +60,10 @@ class CreateProfile extends Component {
         e.preventDefault();
         
         const profileData = {
+<<<<<<< HEAD
            handle: this.state.handle,
+=======
+>>>>>>> d41a4659d45e24292ac0d4c8daf9ec4bae2684b0
            company: this.state.company,
            website: this.state.website,
            location: this.state.location,
@@ -119,6 +137,10 @@ class CreateProfile extends Component {
                 )
         }
         
+<<<<<<< HEAD
+=======
+        
+>>>>>>> d41a4659d45e24292ac0d4c8daf9ec4bae2684b0
       //Select options for status  
         const options = [
             { label: '* Select Professional Status', value: 0 },
@@ -219,26 +241,49 @@ class CreateProfile extends Component {
                                     </button>
                                 </div>
                                 {socialInputs}
+<<<<<<< HEAD
                                 <input type="submit" value="Submit" 
                                 className="btn btn-info btn-block mt-4"  />
+=======
+                                <input type="submit" value="Submit" className="btn btn-info btn-block mt-4"  />
+>>>>>>> d41a4659d45e24292ac0d4c8daf9ec4bae2684b0
                             </form>
                         </div>
                     </div>
                 </div>    
             </div>
+<<<<<<< HEAD
             );
+=======
+            )
+>>>>>>> d41a4659d45e24292ac0d4c8daf9ec4bae2684b0
     }
 }
 
 CreateProfile.propTypes = {
     profile: PropTypes.object.isRequired,
+<<<<<<< HEAD
     errors: PropTypes.object.isRequired
+=======
+    errors: PropTypes.object.isRequired,
+    createProfile: PropTypes.func.isRequired,
+    getCurrentProfile: PropTypes.func.isRequired
+>>>>>>> d41a4659d45e24292ac0d4c8daf9ec4bae2684b0
 };
 
 const mapStatetoProps = state => ({
   profile: state.profile,
+<<<<<<< HEAD
   errors: state.errors    
 });
 
 
 export default connect(mapStatetoProps, { createProfile })(withRouter(CreateProfile));
+=======
+  errors: state.errors
+    
+});
+
+
+export default connect(mapStatetoProps, { createProfile, getCurrentProfile })(withRouter(CreateProfile));
+>>>>>>> d41a4659d45e24292ac0d4c8daf9ec4bae2684b0

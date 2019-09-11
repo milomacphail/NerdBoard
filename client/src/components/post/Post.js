@@ -50,7 +50,11 @@ class Post extends Component {
 
 }
 
+<<<<<<< HEAD
 Post.propTypes = {
+=======
+Post.PropTypes = {
+>>>>>>> d41a4659d45e24292ac0d4c8daf9ec4bae2684b0
     getPost: PropTypes.func.isRequired,
     post: PropTypes.object.isRequired
 }
