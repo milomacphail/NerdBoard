@@ -5,7 +5,7 @@ import { GET_PROFILE, PROFILE_LOADING, CLEAR_CURRENT_PROFILE, GET_ERRORS, GET_PR
 export const getCurrentProfile = () => dispatch => {
     dispatch(setProfileLoading());
     axios.get('/api/profile')
-        .then(res =>
+    .then(res =>
         dispatch({
             type: GET_PROFILE,
             payload: res.data
@@ -48,8 +48,6 @@ export const createProfile = (profileData, history) => dispatch => {
         })
         );
 };
-
-
 
 //Add Experience
 export const addExperience = (expData, history) => dispatch => {

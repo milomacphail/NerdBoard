@@ -226,7 +226,7 @@ class CreateProfile extends Component {
                     </div>
                 </div>    
             </div>
-            )
+            );
     }
 }
 
