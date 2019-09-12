@@ -2,10 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require("body-parser");
 const passport = require('passport');
-<<<<<<< HEAD
 const path = require('path');
-=======
->>>>>>> d41a4659d45e24292ac0d4c8daf9ec4bae2684b0
 
 const users = require('./routes/api/users');
 const profile = require('./routes/api/profile');
@@ -23,11 +20,7 @@ const db = require('./config/keys').mongoURI;
 //Connect to MongoDB
 
 mongoose
-<<<<<<< HEAD
 .connect(db, { useNewUrlParser : true, useCreateIndex: true, })
-=======
-.connect(db)
->>>>>>> d41a4659d45e24292ac0d4c8daf9ec4bae2684b0
 .then(()=>console.log("Connected to MongoDB"))
 .catch(err => console.log(err));
 

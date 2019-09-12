@@ -7,7 +7,7 @@ const ProfileActions = () => {
             <Link to="edit-profile" className="btn btn-light">
               <i className="fas fa-user-circle text-info mr-1"></i> Edit Profile
             </Link>
-            <Link href="add-experience" className="btn btn-light">
+            <Link to="add-experience" className="btn btn-light">
               <i className="fab fa-black-tie text-info mr-1"></i>
               Add Experience
             </Link>

@@ -47,11 +47,7 @@ const mapStateToProps = state => ({
     auth: state.auth
 })
 
-<<<<<<< HEAD
 CommentItem.propTypes = {
-=======
-CommentItem.PropTypes = {
->>>>>>> d41a4659d45e24292ac0d4c8daf9ec4bae2684b0
     deleteComment: PropTypes.func.isRequired,
     comment : PropTypes.object.isRequired,
     postId: PropTypes.string.isRequired,

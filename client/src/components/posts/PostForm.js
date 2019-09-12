@@ -12,13 +12,8 @@ class PostForm extends Component {
              text: '',
             errors: {} 
         }
-<<<<<<< HEAD
         this.onChange = this.onChange.bind(this);
         this.onSubmit= this.onSubmit.bind(this);
-=======
-        this.onChange = this.onChange.bing(this);
-        this.onSubmit= this.onSubmit.bing(this);
->>>>>>> d41a4659d45e24292ac0d4c8daf9ec4bae2684b0
     }
     
     componentWillReceiveProps(newProps) {
