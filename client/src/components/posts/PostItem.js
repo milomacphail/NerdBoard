@@ -50,7 +50,7 @@ class PostItem extends Component {
                   {post.text}
                   </p>
                     { showActions ? (<span>
-                     <button onCLick={this.onLikeClick.bind(this, post._id)}
+                     <button onClick={this.onLikeClick.bind(this, post._id)}
                   type="button" 
                   className="btn btn-light mr-1">
                     <i className={classnames('fas fa-thumbs-up', {
@@ -58,7 +58,7 @@ class PostItem extends Component {
                     })} />
                     <span className="badge badge-light">{post.likes.length}</span>
                   </button>
-                  <button onCLick={this.onUnlikeClick.bind(this, post._id)}
+                  <button onClick={this.onUnlikeClick.bind(this, post._id)}
                   type="button" 
                   className="btn btn-light mr-1">
                     <i className="text-secondary fas fa-thumbs-down">
