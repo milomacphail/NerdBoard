@@ -28,7 +28,7 @@ class Navbar extends Component {
                   </Link>
               </li>
               <li className="nav-item">
-                  <a href="" onClick={this.onLogoutClick.bind(this)} 
+                  <a href="#ok" onClick={this.onLogoutClick.bind(this)} 
                   className="nav-link">
                     <img src={ user.avatar } alt={user.name} style={{ width: '25px', marginRight: '5px' }} title ="You must have a Gravitar connected to your email to display an image"
                     />
