@@ -4,9 +4,9 @@ const Validator = require('validator');
 const isEmpty =  require('./is-empty');
 
 module.exports = function validatePostInput(data){
+    
     let errors = {};
     
-   
     data.text = !isEmpty(data.text) ? data.text : "";
     data.password = !isEmpty(data.password) ? data.password : "";
     
@@ -21,5 +21,5 @@ module.exports = function validatePostInput(data){
     return {
         errors,
         isValid: isEmpty(errors)
-    }
-}
+    };
+};
