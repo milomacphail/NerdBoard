@@ -37,7 +37,7 @@ class Experience extends Component {
                         <tr>
                             <th>Company</th>
                             <th>Title</th>
-                            <th>Years</th>
+                            <th>Dates of Employment</th>
                             <th />
                         </tr>
                             {experience}
