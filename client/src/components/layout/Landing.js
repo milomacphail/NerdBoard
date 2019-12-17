@@ -19,11 +19,7 @@ class Landing extends Component {
                   <div className="container">
                     <div className="row">
                       <div className="col-md-12 text-center">
-<<<<<<< HEAD
                         <h1 className="display-3 mb-4">NerdBoard: Connect.
-=======
-                        <h1 className="display-3 mb-4">NerdBoard: Stay Posted.
->>>>>>> 25e03c81ed254cea4d529e30be94bf3a3d4393c4
                         </h1>
                         <p className="lead"> Create a developer profile, share posts and get help from other developers</p>
                         <hr />
